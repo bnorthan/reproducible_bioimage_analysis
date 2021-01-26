@@ -1,9 +1,14 @@
 windowName="PSF BW"
+convertTo8Bit=1
 
 selectWindow(windowName);
 setSlice(33);
 setMinAndMax(0.000016368, 0.035300000);
-run("8-bit");
+
+if (convertTo8Bit) {
+	run("8-bit");
+}
+
 run("Properties...", 
     "channels=1 "+
     "slices=65 "+
