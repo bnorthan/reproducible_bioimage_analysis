@@ -8,7 +8,9 @@ from java.util import HashMap
 # PSF generation
 
 ### path to the condiguration file needs to be checked and adjusted depending on your installation. 
-config = '/Users/miura/Downloads/config.txt'
+#config = '/Users/miura/Downloads/config.txt'
+config = '/home/bnorthan/code/reproducibility/reproducible_bioimage_analysis/Fig04_PSF/config.txt'
+
 
 ### matlab usage translated into jython script. 
 ### matlab = PSFGenerator.compute('/Users/miura/Downloads/config.txt')
