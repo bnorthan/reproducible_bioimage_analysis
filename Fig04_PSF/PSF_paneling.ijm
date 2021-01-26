@@ -1,4 +1,6 @@
-selectWindow("PSF RW");
+windowName="PSF BW"
+
+selectWindow(windowName);
 setSlice(33);
 setMinAndMax(0.000016368, 0.035300000);
 run("8-bit");
@@ -18,7 +20,7 @@ makeLine(0, 81, 256, 81);
 run("Reslice [/]...", "output=0.25 slice_count=1");
 rename("XZ");
 
-selectWindow("PSF RW");
+selectWindow(windowName);
 setSlice(33);
 run("Select None");
 run("Duplicate...", "title=XY");
