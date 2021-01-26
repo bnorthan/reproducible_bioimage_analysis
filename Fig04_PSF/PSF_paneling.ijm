@@ -26,12 +26,14 @@ run("Select None");
 run("Duplicate...", "title=XY");
 
 selectWindow("XY");
-setThreshold(190, 255);
+//setThreshold(190, 255);
+run("Threshold...");
 run("Capture Image");
 rename("XY-TH190");
 
 selectWindow("XZ");
-setThreshold(190, 255);
+//setThreshold(190, 255);
+run("Threshold...");
 run("Capture Image");
 rename("XZ-TH190");
 
